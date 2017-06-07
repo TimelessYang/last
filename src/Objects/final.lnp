@@ -1,0 +1,14 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\uart.o"
+".\objects\adc.o"
+".\objects\key.o"
+".\objects\display.o"
+".\objects\delay.o"
+".\objects\temp.o"
+".\objects\startup_lpc11xx.o"
+".\objects\system_lpc11xx.o"
+--strict --scatter ".\Objects\final.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\final.map" -o .\Objects\final.axf
